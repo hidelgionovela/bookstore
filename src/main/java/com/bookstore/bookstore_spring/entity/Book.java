@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Book {
-         
+
          @Id
          @GeneratedValue(strategy = GenerationType.IDENTITY)
          private int id;
@@ -58,10 +58,4 @@ public class Book {
                   this.price = price;
          }
 
-         
-
-
-
-
-         
 }
