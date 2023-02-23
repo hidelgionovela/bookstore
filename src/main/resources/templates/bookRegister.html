@@ -49,7 +49,7 @@
 
   <div class="container my-4 p-4 center" style="border: 1px dotted black;">
     <h4 class="text-center">New Book Register</h4>
-    <form class="col-md-4 offset-md-4">
+    <form class="col-md-4 offset-md-4" th:action="@{/save}" method="post">
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
