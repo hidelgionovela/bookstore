@@ -18,8 +18,8 @@ public class MyBookListService {
                   mybook.save(book);
          }
 
-         // public List<Book> getAllBook(){
-         //          return bRepo.findAll();
-         // }
+         public List<MyBookList> getAllMyBook(){
+                  return mybook.findAll();
+         }
          
 }
