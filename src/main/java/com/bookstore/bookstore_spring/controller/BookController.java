@@ -18,7 +18,6 @@ import com.bookstore.bookstore_spring.service.MyBookListService;
 
 import java.util.*;
 
-
 @Controller
 public class BookController {
 
@@ -40,7 +39,7 @@ public class BookController {
 
     @GetMapping("/book_list")
     public ModelAndView getAllBook() {
-        List<Book>list = service.getAllBook();
+        List<Book> list = service.getAllBook();
         ModelAndView m = new ModelAndView();
         m.setViewName("bookList");
         m.addObject("book", list);
@@ -56,7 +55,7 @@ public class BookController {
 
     @PostMapping("/save")
     public String addBook(@ModelAttribute Book b) {
-        //TODO: process POST request
+        // TODO: process POST request
         service.save(b);
         return "redirect:/book_list";
     }
@@ -68,5 +67,5 @@ public class BookController {
         myBookService.saveMyBook(mb);
         return "redirect:/my_book";
     }
-    
+
 }
