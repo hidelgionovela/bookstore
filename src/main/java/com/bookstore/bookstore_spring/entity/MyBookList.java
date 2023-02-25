@@ -5,9 +5,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="MyBook")
+@Table(name = "MyBook")
 public class MyBookList {
-      
+
          @Id
          private int id;
          private String name;
@@ -58,9 +58,4 @@ public class MyBookList {
                   this.price = price;
          }
 
-         
-
-         
-
-         
 }
