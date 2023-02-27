@@ -37,6 +37,14 @@ public class BookController {
         return "bookRegister";
     }
 
+    @RequestMapping("/edit_book/{id}")
+    public String editBook(@PathVariable("id") int id, Model model) {
+        Book b = service.getBookById(id);
+        model.addAttribute("book", b);
+        return "editBook";
+    }
+
+
     @GetMapping("/book_list")
     public ModelAndView getAllBook() {
         List<Book> list = service.getAllBook();
