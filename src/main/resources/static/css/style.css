@@ -1,0 +1,9 @@
+body{
+         /* background-image: url(../images/icon.png); */
+         background-image: url();
+         backdrop-filter: blur(25px);
+}
+
+td{
+         color:#ccc;
+}
