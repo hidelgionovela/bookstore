@@ -52,28 +52,17 @@
     <form class="col-md-4 offset-md-4" th:action="@{/save}" method="post">
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+        <input type="text" class="form-control" name="name">
       </div>
       <div class="mb-3">
         <label for="author" class="form-label">Author</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="author">
+        <input type="text" class="form-control" name="author">
       </div>
-      <!-- <div class="mb-3">
-                                    <label for="price" class="form-label">Price</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price">
-                                  </div> -->
       <div class="input-group mb-3 mt-3 pt-4">
-        <article></article>
-        <!-- <label for="price" class="form-label">Price</label>
-                                    <br> -->
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price"
-          placeholder="Price">
+        <input type="text" class="form-control" name="price" placeholder="Price">
         <span class="input-group-text">0.00</span>
         <span class="input-group-text">MT</span>
       </div>
-
-
-
       <center> <button type="submit" class="btn btn-primary">Submit</button></center>
     </form>
   </div>
