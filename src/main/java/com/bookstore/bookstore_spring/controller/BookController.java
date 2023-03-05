@@ -44,7 +44,6 @@ public class BookController {
         return "editBook";
     }
 
-
     @GetMapping("/book_list")
     public ModelAndView getAllBook() {
         List<Book> list = service.getAllBook();
@@ -78,8 +77,8 @@ public class BookController {
 
     @RequestMapping("/deleteBook/{id}")
     public String deleteBook(@PathVariable("id") int id) {
-             service.deleteById(id);
-             return "redirect:/book_list";
+        service.deleteById(id);
+        return "redirect:/book_list";
     }
 
 }
