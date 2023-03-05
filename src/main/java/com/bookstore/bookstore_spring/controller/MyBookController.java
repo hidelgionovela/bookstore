@@ -19,5 +19,5 @@ public class MyBookController {
                   return "redirect:/my_book";
                   // return "redirect:/book_list";
          }
-         
+
 }
