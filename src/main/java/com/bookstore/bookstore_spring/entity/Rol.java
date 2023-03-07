@@ -24,6 +24,10 @@ public class Rol {
                   this.name = name;
          }
 
+         public Rol(String name) {
+                  this.name = name;
+         }
+
 
          public int getId() {
                   return id;
