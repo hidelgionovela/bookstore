@@ -17,26 +17,21 @@ public class UserServiceImplt implements UserService {
 
          private UserRepository userRepository;
 
-         
-
          public UserServiceImplt(UserRepository userRepository) {
                   this.userRepository = userRepository;
          }
 
-
-
          @Override
          public User save(UserRegisterDTO registroDTO) {
                   // TODO Auto-generated method stub
-                  
+
                   User usuario = new User(registroDTO.getFirst_name(),
-                  registroDTO.getLast_name(),
-                  registroDTO.getEmail(),
-                  registroDTO.getPassword(),
-                  Arrays.asList(new Rol("ROLE_USER") ));
+                                    registroDTO.getLast_name(),
+                                    registroDTO.getEmail(),
+                                    registroDTO.getPassword(),
+                                    Arrays.asList(new Rol("ROLE_USER")));
 
                   return userRepository.save(usuario);
          }
 
-         
 }
