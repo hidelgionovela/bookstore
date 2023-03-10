@@ -22,20 +22,6 @@
 
          <nav class="navbar navbar-expand-lg bg-dark" th:include="div :: div"></nav>
 
-         <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-                  <div class="container">
-                           <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                             data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                             <span class="sr-only">Alternar navegação</span> <span
-                                                      class="icon-bar"></span> <span class="icon-bar"></span> <span
-                                                      class="icon-bar"></span>
-                                    </button>
-                                    <a class="navbar-brand" href="#" th:href="@{/register}">Registro-se ou Faca o login</a>
-                           </div>
-                  </div>
-         </nav> -->
-
          <br>
          <br>
 
@@ -49,13 +35,14 @@
                                     <h1>Registra-te</h1>
                                     <form th:action="@{/userRegister}" method="post" th:object="${user}">
                                              <div class="form-group">
-                                                      <label class="control-label" for="first_name">Primeiro Nome : </label> <input
-                                                               id="first_name" type="text" class="form-control"
+                                                      <label class="control-label" for="first_name">Primeiro Nome :
+                                                      </label> <input id="first_name" type="text" class="form-control"
                                                                th:field="*{first_name}" required autofocus="autofocus">
                                              </div>
 
                                              <div class="form-group">
-                                                      <label class="control-label" for="last_name">Ultimo Nome : </label>
+                                                      <label class="control-label" for="last_name">Ultimo Nome :
+                                                      </label>
                                                       <input id="last_name" class="form-control" th:field="*{last_name}"
                                                                required autofocus="autofocus">
                                              </div>
@@ -74,7 +61,8 @@
 
                                              <div class="form-group  mt-3">
                                                       <button type="submit" class="btn btn-success">Registrar</button>
-                                                      <span>Esta registrado? <a th:href="@{/login}">Inicie a seccao aqui!</a></span>
+                                                      <span>Esta registrado? <a th:href="@{/login}">Inicie a seccao
+                                                                        aqui!</a></span>
                                              </div>
                                     </form>
 
