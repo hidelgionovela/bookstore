@@ -1,6 +1,5 @@
 package com.bookstore.bookstore_spring.dto;
 
-
 /**
  * UserRegisterDTO
  */
@@ -78,10 +77,4 @@ public class UserRegisterDTO {
                   this.password = password;
          }
 
-         
-         
-         
-         
-
-         
 }
