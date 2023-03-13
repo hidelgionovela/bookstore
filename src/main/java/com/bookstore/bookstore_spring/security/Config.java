@@ -1,9 +1,11 @@
 package com.bookstore.bookstore_spring.security;
 
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
+import org.springframework.context.annotation.Configuration;
 
 
+@Configuration
+public class Config {
 
-public class Config extends WebSecurityConfiguration{
+     
 
 }
