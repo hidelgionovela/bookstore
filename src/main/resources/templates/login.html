@@ -28,12 +28,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<h1>Inicio de sesión</h1>
+				<h1>Inicio de senccao</h1>
 				<form th:action="@{/login}" method="post">
 
 					<div th:if=${param.error}>
-						<div class="alert alert-danger">Usuario o contraseña
-							inválidos</div>
+						<div class="alert alert-danger">Username ou Password invalidos</div>
 					</div>
 
 					<div th:if=${param.logout}>
@@ -43,8 +42,7 @@
 
 
 					<div class="form-group">
-						<label for="username">Nombre de
-							usuario : </label> <input id="username" name="username"
+						<label for="username">username : </label> <input id="username" name="username"
 							type="text" class="form-control" required
 							autofocus="autofocus" placeholder="Digite su email ID">
 					</div>
@@ -68,7 +66,7 @@
 					</div>
 				</form>
 				<div class="form-group">
-					<span>Si eres nuevo usuario <a th:href="@{/registro}">regístrate
+					<span>Se nao tem um username <a th:href="@{/userRegister}">registra - te
 							aqui</a></span>
 				</div>
 
