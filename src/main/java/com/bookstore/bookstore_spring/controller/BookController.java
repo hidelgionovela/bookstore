@@ -32,6 +32,11 @@ public class BookController {
         return "home";
     }
 
+    @GetMapping("/login2")
+    public String login() {
+        return "login";
+    }
+
     @GetMapping("/book_register")
     public String bookRegister() {
         return "bookRegister";
