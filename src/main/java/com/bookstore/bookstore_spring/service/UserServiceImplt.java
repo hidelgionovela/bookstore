@@ -2,6 +2,8 @@ package com.bookstore.bookstore_spring.service;
 
 import java.util.Arrays;
 
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.bookstore.bookstore_spring.dto.UserRegisterDTO;
@@ -32,6 +34,12 @@ public class UserServiceImplt implements UserService {
                                     Arrays.asList(new Rol("ROLE_USER")));
 
                   return userRepository.save(usuario);
+         }
+
+         @Override
+         public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+                  // TODO Auto-generated method stub
+                  throw new UnsupportedOperationException("Unimplemented method 'loadUserByUsername'");
          }
 
 }
