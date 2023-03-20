@@ -1,7 +1,5 @@
 package com.bookstore.bookstore_spring.security;
 
-
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
@@ -16,16 +14,16 @@ public class Config {
 	@Bean
 	SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		http
-			.authorizeHttpRequests(authConfig -> {
-				authConfig.requestMatchers("/").permitAll();
-				authConfig.requestMatchers("/login2").permitAll();
-				authConfig.requestMatchers("/user/**").authenticated();
-				authConfig.requestMatchers("/admin/**").denyAll();
-				
-			})
-			.formLogin(Customizer.withDefaults()) // Login with browser and Form
-			.httpBasic(Customizer.withDefaults()); // Login with Insomnia and Basic Auth
+				.authorizeHttpRequests(authConfig -> {
+					authConfig.requestMatchers("/").permitAll();
+					authConfig.requestMatchers("/login2").permitAll();
+					authConfig.requestMatchers("/user/**").authenticated();
+					authConfig.requestMatchers("/admin/**").denyAll();
+
+				})
+				.formLogin(Customizer.withDefaults()) // Login with browser and Form
+				.httpBasic(Customizer.withDefaults()); // Login with Insomnia and Basic Auth
 		return http.build();
 	}
-	
+
 }
